@@ -6,7 +6,7 @@ import pdfkit
 import markdown
 
 # Set your Gemini API key
-API_KEY = "AIzaSyCtv6LQWAUCj2ZxRUrkqICa_bZaH75SGUU"  # 🔁 Replace this with your Gemini API key
+API_KEY = os.getenv("GEMINI_API_KEY")
 genai.configure(api_key=API_KEY)
 
 # Function to generate roadmap
